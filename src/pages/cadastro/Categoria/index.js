@@ -29,9 +29,9 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log('teste...');
-    const URL_TOP = 'http://localhost:8080/categorias';
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://aluraflix-eight.herokuapp.com/categorias';
 
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
