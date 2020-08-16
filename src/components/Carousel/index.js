@@ -1,7 +1,7 @@
 import React from 'react';
-import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
+import { VideoCardGroupContainer, VideoCardList, Title, SubTitle ,ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
-import Slider, { SliderItem } from './components/Slider';
+import Slider, { SliderItem} from './components/Slider';
 
 function Carousel({
   ignoreFirstVideo,
@@ -33,11 +33,12 @@ function Carousel({
 
           return (
             <SliderItem key={video.titulo}>
-              <VideoCard
-                videoTitle={video.titulo}
-                videoURL={video.url}
-                categoryColor={categoryColor}
-              />
+                <VideoCard
+                  videoTitle={video.titulo}
+                  videoURL={video.url}
+                  categoryColor={categoryColor}
+                />
+                <SubTitle>{video.titulo}</SubTitle>
             </SliderItem>
           );
         })}

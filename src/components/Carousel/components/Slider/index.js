@@ -6,6 +6,8 @@ import styled from 'styled-components';
 const Container = styled.ul`
   padding: 0;
   margin: 0;
+
+  
   .slick-prev,
   .slick-next {
     z-index: 50;
@@ -29,6 +31,7 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
+  margin-top: 15px;
   margin-right: 16px;
   img {
     margin: 16px;
@@ -43,7 +46,7 @@ const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       centerMode: false,
       variableWidth: true,

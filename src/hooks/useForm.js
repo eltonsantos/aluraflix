@@ -1,24 +1,24 @@
 import { useState } from 'react';
 
-function useForm(valoresIniciais) {
-  const [values, setValues] = useState(valoresIniciais);
+function useForm(initialValues) {
+  const [values, setValues] = useState(initialValues);
 
-  function setValue(chave, valor) {
+  function setValue(key, value) {
     setValues({
       ...values,
-      [chave]: valor,
+      [key]: value,
     });
   }
 
-  function handleChange(infosDoEvento) {
+  function handleChange(info) {
     setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
+      info.target.getAttribute('name'),
+      info.target.value,
     );
   }
 
   function clearForm() {
-    setValues(valoresIniciais);
+    setValues(initialValues);
   }
 
   return {
