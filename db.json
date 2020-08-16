@@ -40,6 +40,15 @@
         "text": "Formação de Jogos na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
       }
+    },
+    {
+      "titulo": "Uma categoria teste",
+      "cor": "#13cbec",
+      "link_extra": {
+        "text": "Teste pra da certo",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
+      },
+      "id": 6
     }
   ],
   "videos": [
@@ -198,6 +207,12 @@
       "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU",
       "categoriaId": 2,
       "id": 26
+    },
+    {
+      "titulo": "Agora torcer pra da certo",
+      "url": "https://www.youtube.com/watch?v=EOCzolXC3Fk",
+      "categoriaId": 6,
+      "id": 28
     }
   ]
 }
